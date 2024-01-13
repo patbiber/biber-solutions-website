@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biber Cloud</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #asciiBeaver {
+            font-family: "Courier New", monospace;
+            white-space: pre;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: bold;
+            color: green;
+        }
+        #ufo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all 4s ease-in-out; /* Smooth transition for the movement */
+        }
+        @keyframes ufoMove {
+            from {
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+            }
+            to {
+                bottom: 100%;
+                left: 100%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<br>
+<br>
+
+
+    <div id="asciiBeaver"></div>
+    <img id="ufo" src="ufo.png" alt="UFO"> <!-- Add your UFO image path here -->
+
+
+    <script>
+        // JavaScript for beaver
+        const frames = [
+            `                   .---.\n                  @ @   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `,
+            `                   .---.\n                  - -   )\n                  ^     |\n                 [|]    | ##\n                 /      |####\n                (       |####\n                 \| /   |#BP#\n                / |.'   |###\n               _\ \`\\   )##\n              /,,_/,,____#  `
+        ];
+
+        let currentFrame = 0;
+
+        setInterval(() => {
+            document.getElementById("asciiBeaver").innerText = frames[currentFrame];
+            currentFrame = (currentFrame + 1) % frames.length;
+        }, 500); // Change frame every 500ms for blinking effect
+        
+             // JavaScript for UFO animation
+             window.addEventListener('load', () => {
+            const ufo = document.getElementById('ufo');
+            ufo.style.animation = 'ufoMove 10s linear infinite'; // Apply the animation
+        });
+
+
+    </script>
+</body>
+</html>
