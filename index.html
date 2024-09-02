@@ -88,13 +88,33 @@
             width: 24px;
             height: 24px;
         }
+
+    /* Default size for larger screens */
+    .logo {
+        float: right;
+    }
+    .logo img {
+            width:250px;
+        }
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 600px) {
+        .logo {
+            float: right;
+        }
+        .logo img {
+            width:75px;
+        }
     </style>
 </head>
 <body>
     <div id="centerContainer">
+
+    <div class="logo"><img src="tree.png" alt="Biber Network IT Logo"/></div>
+
     <h1>Biber Network IT<h1>
 
-    <h1>Ihr Partner für massgeschneiderte IT-Lösungen</h1>
+    <h2>Ihr Partner für massgeschneiderte IT-Lösungen</h2>
 
     <p>Als IT-Consultant mit langjähriger Erfahrung in der Betreuung grosser Unternehmen verstehe ich, dass auch kleine und mittlere Unternehmen (KMUs) Zugang zu hochqualitativer IT-Infrastruktur benötigen, um in der heutigen digitalen Welt erfolgreich zu sein. Aus diesem Grund biete ich umfassende IT-Dienstleistungen an, die speziell auf die Bedürfnisse von KMUs zugeschnitten sind.</p>
 
