@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Biber;Patrick
+FN:Patrick Biber
+ORG:Biber Network IT
+URL:https://biber.solutions
+EMAIL;TYPE=INTERNET:contact@biber.solutions
+TEL;TYPE=voice,work,pref:+41 78 662 59 21
+ADR;TYPE=intl,work,postal,parcel:;;Hermann Hiltbrunner-Weg 24;Uerikon;Zurich;8713;Switzerland
+END:VCARD
