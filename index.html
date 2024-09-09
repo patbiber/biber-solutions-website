@@ -116,6 +116,20 @@
         max-width: 900px;
     }
 
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     @media only screen and (max-width: 600px) {
         .logo {
             float: right;
@@ -125,6 +139,12 @@
         }
         .cool-title {
             font-size: 36px;
+        }
+        .products img {
+            max-width: 500px;
+        }
+        .products video {
+            max-width: 500px;
         }
 
 
@@ -214,10 +234,11 @@
 
     <h2>Panasonic Toughbooks</h2>
     <p>Panasonic Toughbooks sind bekannt für ihre aussergewöhnliche Robustheit und Langlebigkeit. Sie sind so konzipiert, dass sie extremen Bedingungen wie Stössen, Wasser, Staub und extremen Temperaturen standhalten. Diese Laptops sind ideal für den Einsatz in anspruchsvollen Umgebungen, wie bei Ausseneinsätzen, in Werkstätten oder bei Notfalldiensten. Darüber hinaus bieten sie eine lange Akkulaufzeit und zuverlässige Leistung, was sie zu einer bevorzugten Wahl für Profis macht, die in herausfordernden Umgebungen arbeiten.</p>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZyQkNC0vvs0?si=dK2GU3jmET8KCqNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe src="https://www.youtube-nocookie.com/embed/ZyQkNC0vvs0?si=dK2GU3jmET8KCqNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <br> 
     <a href="https://connect.na.panasonic.com/toughbook">More infos about Panasonic Toughbooks.</a><br>
-
 
     <h2>Power PDF statt Adobe Cloud</h2>
     <p>Power PDF ist eine leistungsstarke Softwarelösung zum Erstellen, Bearbeiten und Konvertieren von PDFs. Sie bietet eine intuitive Benutzeroberfläche und vielseitige Funktionen, die speziell auf die Bedürfnisse von Unternehmen und Fachleuten zugeschnitten sind. Power PDF ermöglicht es Ihnen, effizient und präzise mit PDFs zu arbeiten, egal ob im Büro, unterwegs oder im Homeoffice. Diese Lösung ist ideal für alle, die eine zuverlässige und flexible PDF-Software benötigen. Weitere Informationen finden Sie <a href= https://www.tungstenautomation.com/products/power-pdf>hier</a>.</p>
