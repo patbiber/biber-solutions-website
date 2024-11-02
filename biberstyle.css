@@ -1,6 +1,10 @@
 
 body {
-    width: 95%; text-align: center; 
+    padding-top: 40px;
+    padding-bottom: 500px;
+    width: 95%; 
+    text-align: center; 
+    margin-bottom: 100px;
     #centerContainer { max-width: 900px; text-align: left; margin: 0px auto; }
     color: white;
     font-family: Helvetica, Arial, sans-serif;
@@ -119,6 +123,55 @@ video {
     color: green;
 }   
 
+header { 
+   
+    padding: 0 2rem;
+    position: fixed; /* Make header always visible */
+    top: 0;
+    align-items: center;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 0rem 5rem;
+    background-color: rgba(0, 14, 119, 0.8); /* Semi-transparent background */
+    z-index: 1; /* Ensures header stays above other content */
+  }
+ 
+  nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+
+  nav a { 
+    display: inline-block;
+    font-weight: bold;
+    margin: 10px 10px; /* Space out the links */
+    color: white; 
+    text-decoration: blueviolet; 
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  }
+  a:hover {
+    background-color: rgb(11, 133, 70); 
+    border-radius: 5px;
+  }
+
+  #hamburger-btn {
+    border: none;
+    font-size: 1px;
+    background: none;
+  }
+
 @media only screen and (max-width: 600px) {
     .logo {
         float: right;
@@ -128,3 +181,37 @@ video {
     }
     .cool-title {
         font-size: 36px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%; /* Full-width nav menu */
+        display: none; /* Hide the nav by default */
+        margin-right: 0;
+        }
+    
+        nav ul {
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        nav a {
+        display: block; /* Make links block-level for better touch targets */
+        margin: 10px 0; /* Spacing between links */
+        }
+    
+        #hamburger-btn {
+        display: block; /* Show hamburger menu */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+        margin-right: 10px;
+        }
+    
+        header {
+        flex-wrap: wrap; /* Allow header items to wrap */
+        padding: 0.5rem; /* Reduce padding */
+        }
+    }
