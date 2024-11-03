@@ -44,7 +44,7 @@ ul li {
 }
 
 ul li::before {
-    content: "•";
+    content: "🚀";
     position: absolute;
     left: 0;
     color: white;
@@ -133,7 +133,7 @@ header {
     display: flex;
     justify-content: space-between;
     
-    padding: 0rem 5rem;
+    padding: 0rem 2rem;
     background-color: rgba(0, 14, 119, 0.8); /* Semi-transparent background */
     z-index: 1; /* Ensures header stays above other content */
   }
@@ -172,7 +172,7 @@ header {
     background: none;
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .logo {
         float: right;
     }
