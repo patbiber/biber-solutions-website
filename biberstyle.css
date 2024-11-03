@@ -84,6 +84,13 @@ ul li::before {
         max-width:250px;
 }
 
+.photo {
+    float: right;
+}
+.photo img {
+        max-width:400px;
+}
+
 .cool-title {
     font-family: 'Arial', sans-serif;
     font-size: 48px;
@@ -124,16 +131,12 @@ video {
 }   
 
 header { 
-   
     padding: 0 2rem;
     position: fixed; /* Make header always visible */
     top: 0;
     align-items: center;
-    
     display: flex;
     justify-content: space-between;
-    
-    padding: 0rem 2rem;
     background-color: rgba(0, 14, 119, 0.8); /* Semi-transparent background */
     z-index: 1; /* Ensures header stays above other content */
   }
@@ -147,21 +150,16 @@ header {
     justify-content: center; /* Center the links horizontally */
   }
 
-  nav ul li {
-    list-style: none;
-  }
-
-
-  nav a { 
+  nav ul.menu a { 
     display: inline-block;
     font-weight: bold;
-    margin: 10px 10px; /* Space out the links */
+    margin: 10px 20px 10px 20px; /* Space out the links */
     color: white; 
     text-decoration: blueviolet; 
-    padding: 10px;
+    padding: 5px;
     transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
   }
-  a:hover {
+  nav ul.menu a:hover {
     background-color: rgb(11, 133, 70); 
     border-radius: 5px;
   }
