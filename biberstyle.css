@@ -93,14 +93,26 @@ ul li::before {
 
 .cool-title {
     font-family: 'Arial', sans-serif;
-    font-size: 48px;
+    font-size: 52px;
     font-weight: bold;
     background: linear-gradient(to right, #ffcc00, #3333ff);
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0 15px 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.by-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    background: linear-gradient(to right, #ffcc00, #3333ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 0 0 75px 140px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 video {
