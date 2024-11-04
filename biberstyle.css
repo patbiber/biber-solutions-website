@@ -131,7 +131,7 @@ video {
 }   
 
 header { 
-    padding: 0 2rem;
+    padding: 0;
     position: fixed; /* Make header always visible */
     top: 0;
     align-items: center;
